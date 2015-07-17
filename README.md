@@ -20,7 +20,7 @@ The code above mounts your current directory at /src and makes sure that is also
 
 Git tag
 -------
-You can also let bumpversion make a tag and a commit:
+You can also let bumpversion make a tag:
 ```
 docker run -v $PWD:/src \
            -w /src \
