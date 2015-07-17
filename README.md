@@ -1,5 +1,6 @@
 Bumpversion in a Docker container
 =================================
+[![](https://badge.imagelayers.io/tomologic/bumpversion:latest.svg)](https://imagelayers.io/?images=tomologic/bumpversion:latest 'Get your own badge on imagelayers.io')
 
 Packaging the bumpversion utility.  
 Source: https://github.com/peritus/bumpversion  
