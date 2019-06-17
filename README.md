@@ -2,9 +2,9 @@ Bumpversion in a Docker container
 =================================
 [![](https://badge.imagelayers.io/tomologic/bumpversion:latest.svg)](https://imagelayers.io/?images=tomologic/bumpversion:latest 'Get your own badge on imagelayers.io')
 
-Packaging the bumpversion utility.  
-Source: https://github.com/peritus/bumpversion  
-PyPI: https://pypi.python.org/pypi/bumpversion  
+Packaging the bumpversion utility.
+Source: https://github.com/c4urself/bump2version
+PyPI: https://pypi.python.org/pypi/bump2version
 
 Usage
 -----
@@ -12,7 +12,7 @@ The utility needs to know where to find your current version and which files to 
 ```
 docker run -v $PWD:/src \
            -w /src \
-           docker-bumpversion --current-version $(cat VERSION) \
+           tomologic/bumpversion --current-version $(cat VERSION) \
            minor \
            VERSION setup.py
 ```
@@ -24,7 +24,7 @@ You can also let bumpversion make a tag:
 ```
 docker run -v $PWD:/src \
            -w /src \
-           docker-bumpversion --current-version $(cat VERSION) \
+           tomologic/bumpversion --current-version $(cat VERSION) \
            --tag \
            minor \
            VERSION setup.py
