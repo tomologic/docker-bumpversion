@@ -2,7 +2,9 @@ Bumpversion in a Docker container
 =================================
 
 Packaging the bumpversion utility.
+
 Source: https://github.com/c4urself/bump2version
+
 PyPI: https://pypi.python.org/pypi/bump2version
 
 Usage
